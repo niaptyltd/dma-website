@@ -1,29 +1,30 @@
+import Image from "next/image";
+import Link from "next/link";
+
+import { APP_NAME, APP_TAGLINE } from "@/constants/platform";
 import { cn } from "@/utils/cn";
 
-export function BrandMark({
-  className,
-  compact = false
-}: {
-  className?: string;
-  compact?: boolean;
-}) {
+export function BrandMark({ className }: { className?: string }) {
   return (
-    <div
-      className={cn(
-        "relative flex shrink-0 items-center justify-center overflow-hidden rounded-[1.4rem] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(255,224,173,0.32),_transparent_52%),linear-gradient(180deg,rgba(31,25,17,0.98),rgba(10,10,10,1))] text-brand-ink shadow-[0_24px_70px_-36px_rgba(0,0,0,0.95)]",
-        compact ? "h-11 w-11" : "h-14 w-14",
-        className
-      )}
-    >
-      <div className="absolute inset-[1px] rounded-[1.25rem] border border-white/5" />
-      <span
-        className={cn(
-          "relative font-heading font-semibold uppercase tracking-[0.24em] text-brand-ink",
-          compact ? "text-[0.62rem]" : "text-[0.78rem]"
-        )}
-      >
-        DMA
-      </span>
-    </div>
+    <Link href="/" className={cn("flex items-center gap-3", className)}>
+      <div className="relative h-12 w-[140px] overflow-hidden rounded-xl">
+        <Image
+          src="/dma-logo.jpg"
+          alt={APP_NAME}
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+
+      <div className="hidden min-w-0 sm:block">
+        <p className="truncate text-lg font-semibold tracking-[-0.03em] text-white">
+          {APP_NAME}
+        </p>
+        <p className="truncate text-[0.68rem] uppercase tracking-[0.28em] text-white/55">
+          {APP_TAGLINE}
+        </p>
+      </div>
+    </Link>
   );
 }
