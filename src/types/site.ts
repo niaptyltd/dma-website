@@ -73,6 +73,7 @@ export type GalleryItem = {
   year?: string;
   category?: string;
   ceremonySlug?: string;
+  ceremonyTitle?: string;
   title?: string;
   description?: string;
   image?: string;
