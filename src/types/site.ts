@@ -46,6 +46,11 @@ export type Ceremony = {
   overview?: string[];
   highlights?: string[];
   programme?: CeremonyProgrammeItem[];
+  sponsors?: string[];
+  gallery?: string[];
+  specialGuests?: string[];
+  performers?: string[];
+  nominees?: string[];
 };
 
 export type GalleryItem = {
@@ -54,6 +59,7 @@ export type GalleryItem = {
   image?: string;
   year?: string;
   category?: string;
+  ceremonySlug?: string;
 };
 
 export type PartnerItem = {
