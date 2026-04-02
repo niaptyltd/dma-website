@@ -73,7 +73,7 @@ export default async function CeremonyDetailPage({
   }
 
   const galleryItems = getGalleryImagesForCeremony(ceremony.slug);
-  const ceremonySponsors = getSponsorsByName(ceremony.sponsors);
+  const ceremonySponsors = getSponsorsByName(ceremony.sponsors ?? []);
 
   return (
     <>
