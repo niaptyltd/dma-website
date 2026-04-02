@@ -32,34 +32,49 @@ export type CeremonyProgrammeItem = {
   description: string;
 };
 
+export type CeremonyPersonItem = {
+  name: string;
+  role: string;
+  note: string;
+};
+
 export type Ceremony = {
   slug: string;
   year: string;
-  status: string;
+  status: "upcoming" | "completed" | string;
   title: string;
   date: string;
   venue: string;
+  location?: string;
   description: string;
-  shortDescription?: string;
-  heroImage?: string;
-  theme?: string;
-  overview?: string[];
-  highlights?: string[];
-  programme?: CeremonyProgrammeItem[];
-  sponsors?: string[];
+  shortDescription: string;
+  heroImage: string;
+  theme: string;
+  teaser: string;
+  heroLabel: string;
+  ctaHref: string;
+  ctaLabel: string;
+  overview: string[];
+  highlights: string[];
+  programme: CeremonyProgrammeItem[];
+  sponsors: string[];
   gallery?: string[];
-  specialGuests?: string[];
-  performers?: string[];
-  nominees?: string[];
+  specialGuests: CeremonyPersonItem[];
+  performers: CeremonyPersonItem[];
+  nominees: CeremonyPersonItem[];
 };
 
 export type GalleryItem = {
-  title: string;
-  description?: string;
-  image?: string;
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
   year?: string;
   category?: string;
   ceremonySlug?: string;
+  title?: string;
+  description?: string;
+  image?: string;
 };
 
 export type PartnerItem = {
@@ -67,6 +82,8 @@ export type PartnerItem = {
   description?: string;
   logo?: string;
   website?: string;
+  logoMark?: string;
+  summary?: string;
 };
 
 export type MediaItem = {

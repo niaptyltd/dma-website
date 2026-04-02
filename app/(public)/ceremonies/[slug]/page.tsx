@@ -12,6 +12,7 @@ import { getCeremonyBySlug, getGalleryImagesForCeremony, getSponsorsByName } fro
 import { formatDisplayDate } from "@/lib/format";
 import { buildMetadata } from "@/lib/metadata";
 import { ceremonies } from "@/src/data/ceremonies";
+import type { CeremonyPersonItem, CeremonyProgrammeItem } from "@/src/types/site";
 
 export async function generateStaticParams() {
   return ceremonies.map((ceremony) => ({ slug: ceremony.slug }));
@@ -29,12 +30,10 @@ export async function generateMetadata({
     return buildMetadata("Ceremony not found", "This ceremony page could not be found.", `/ceremonies/${slug}`);
   }
 
-  return buildMetadata(
-    ceremony.title,
-    ceremony.shortDescription,
-    `/ceremonies/${ceremony.slug}`,
-    { type: "article", image: ceremony.heroImage }
-  );
+  return buildMetadata(ceremony.title, ceremony.shortDescription, `/ceremonies/${ceremony.slug}`, {
+    type: "article",
+    image: ceremony.heroImage
+  });
 }
 
 function PeopleBlock({
@@ -42,7 +41,7 @@ function PeopleBlock({
   items
 }: {
   title: string;
-  items: { name: string; role: string; note: string }[];
+  items: CeremonyPersonItem[];
 }) {
   return (
     <Card className="space-y-5">
@@ -92,7 +91,7 @@ export default async function CeremonyDetailPage({
           location: {
             "@type": "Place",
             name: ceremony.venue,
-            address: ceremony.location
+            address: ceremony.location ?? ceremony.venue
           },
           organizer: {
             "@type": "Organization",
@@ -184,7 +183,7 @@ export default async function CeremonyDetailPage({
             />
           </Reveal>
           <div className="grid gap-6 lg:grid-cols-2">
-            {ceremony.programme.map((item: { time: string; title: string; description: string }, index: number) => (
+            {ceremony.programme.map((item: CeremonyProgrammeItem, index: number) => (
               <Reveal delay={index * 0.08} key={`${item.time}-${item.title}`}>
                 <Card className="space-y-3">
                   <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-[#d4b06d]">
