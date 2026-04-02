@@ -26,6 +26,17 @@ export type FounderProfile = {
   motivations: FounderStoryItem[];
 };
 
+export type AboutStoryBlock = {
+  title: string;
+  description: string;
+};
+
+export type TimelineEntry = {
+  year: string;
+  title: string;
+  description: string;
+};
+
 export type CeremonyProgrammeItem = {
   time: string;
   title: string;
