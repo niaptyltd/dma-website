@@ -17,14 +17,15 @@ export function BrandMark({ className }: { className?: string }) {
         />
       </div>
 
-      <div className="min-w-0">
-        <p className="truncate text-2xl font-semibold tracking-[-0.03em] text-white sm:text-[2rem]">
-          {APP_NAME}
-        </p>
-        <p className="truncate text-[0.68rem] uppercase tracking-[0.28em] text-white/55 sm:text-[0.72rem]">
-          {APP_TAGLINE}
-        </p>
-      </div>
+      <div className="flex max-w-[280px] flex-col">
+  <p className="text-lg font-semibold tracking-[-0.02em] text-white sm:text-xl">
+    {APP_NAME}
+  </p>
+
+  <p className="text-[0.6rem] uppercase tracking-[0.22em] text-white/50 leading-tight line-clamp-2">
+    {APP_TAGLINE}
+  </p>
+</div>
     </Link>
   );
 }
