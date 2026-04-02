@@ -31,23 +31,25 @@ export function SiteHeader() {
         solid ? "border-b border-white/10 bg-[#070707]/88 backdrop-blur-xl" : "bg-transparent"
       )}
     >
-      <div className="container-shell flex min-h-20 items-center justify-between gap-4 py-3">
-        <Link className="shrink-0" href="/" aria-label="Dumbe Music Awards">
+      <div className="container-shell flex min-h-20 items-center justify-between gap-3 py-3">
+        <div className="min-w-0 flex-1">
           <BrandMark />
-        </Link>
+        </div>
 
         <nav className="hidden items-center gap-6 lg:flex">
           {publicNavigation.map((item) => {
-            const active = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+            const active =
+              pathname === item.href ||
+              (item.href !== "/" && pathname?.startsWith(item.href));
 
             return (
               <Link
+                key={item.href}
+                href={item.href}
                 className={cn(
                   "text-sm font-medium transition",
                   active ? "text-brand-ink" : "text-brand-muted hover:text-brand-ink"
                 )}
-                href={item.href}
-                key={item.href}
               >
                 {item.label}
               </Link>
@@ -57,25 +59,25 @@ export function SiteHeader() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <Link
-            className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/12 px-5 text-sm font-semibold text-brand-ink transition hover:bg-white/[0.06]"
             href="/contact"
+            className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/12 px-5 text-sm font-semibold text-brand-ink transition hover:bg-white/[0.06]"
           >
             Contact
           </Link>
           <Link
-            className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d4b06d]/60 bg-[linear-gradient(135deg,#f6dfb2,#c99547)] px-5 text-sm font-semibold text-[#17120b] transition hover:brightness-105"
             href="/ceremonies/2026"
+            className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d4b06d]/60 bg-[linear-gradient(135deg,#f6dfb2,#c99547)] px-5 text-sm font-semibold text-[#17120b] transition hover:brightness-105"
           >
             Upcoming Ceremony
           </Link>
         </div>
 
         <button
+          type="button"
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.04] text-brand-ink lg:hidden"
+          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/12 bg-white/[0.04] text-brand-ink lg:hidden"
           onClick={() => setOpen((value) => !value)}
-          type="button"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -84,33 +86,35 @@ export function SiteHeader() {
       <AnimatePresence>
         {open ? (
           <motion.div
-            animate={{ opacity: 1, height: "auto" }}
-            className="overflow-hidden border-t border-white/10 bg-[#070707]/95 lg:hidden"
-            exit={{ opacity: 0, height: 0 }}
             initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="overflow-hidden border-t border-white/10 bg-[#070707]/95 lg:hidden"
           >
             <div className="container-shell flex flex-col gap-3 py-4">
               {publicNavigation.map((item) => (
                 <Link
-                  className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-brand-ink transition hover:border-white/10 hover:bg-white/[0.04]"
-                  href={item.href}
                   key={item.href}
+                  href={item.href}
                   onClick={() => setOpen(false)}
+                  className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-brand-ink transition hover:border-white/10 hover:bg-white/[0.04]"
                 >
                   {item.label}
                 </Link>
               ))}
+
               <Link
-                className="rounded-2xl border border-white/12 px-4 py-3 text-center text-sm font-semibold text-brand-ink"
                 href="/contact"
                 onClick={() => setOpen(false)}
+                className="rounded-2xl border border-white/12 px-4 py-3 text-center text-sm font-semibold text-brand-ink"
               >
                 Contact
               </Link>
+
               <Link
-                className="rounded-2xl border border-[#d4b06d]/60 bg-[linear-gradient(135deg,#f6dfb2,#c99547)] px-4 py-3 text-center text-sm font-semibold text-[#17120b]"
                 href="/ceremonies/2026"
                 onClick={() => setOpen(false)}
+                className="rounded-2xl border border-[#d4b06d]/60 bg-[linear-gradient(135deg,#f6dfb2,#c99547)] px-4 py-3 text-center text-sm font-semibold text-[#17120b]"
               >
                 Upcoming Ceremony
               </Link>
