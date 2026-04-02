@@ -30,6 +30,12 @@ export type FounderProfile = {
   description: string;
 };
 
+export type CeremonyProgrammeItem = {
+  time: string;
+  title: string;
+  description: string;
+};
+
 export type Ceremony = {
   slug: string;
   year: string;
@@ -38,6 +44,8 @@ export type Ceremony = {
   date: string;
   venue: string;
   description: string;
+  shortDescription?: string;
+  heroImage?: string;
   overview?: string[];
   highlights?: string[];
   programme?: CeremonyProgrammeItem[];
