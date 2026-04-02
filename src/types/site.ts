@@ -24,4 +24,21 @@ export type FounderProfile = {
   focusAreas: string[];
   story: FounderStoryItem[];
   motivations: FounderStoryItem[];
+};export type CeremonyProgrammeItem = {
+  time: string;
+  title: string;
+  description: string;
+};
+
+export type Ceremony = {
+  slug: string;
+  year: string;
+  status: string;
+  title: string;
+  date: string;
+  venue: string;
+  description: string;
+  overview?: string[];
+  highlights?: string[];
+  programme?: CeremonyProgrammeItem[];
 };
