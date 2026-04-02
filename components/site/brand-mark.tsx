@@ -31,7 +31,7 @@ export function BrandMark({ className, compact = false }: BrandMarkProps) {
           <p className="truncate text-xl font-semibold tracking-[-0.03em] text-white sm:text-2xl">
             {APP_NAME}
           </p>
-          <p className="hidden truncate text-[0.62rem] uppercase tracking-[0.22em] text-white/55 sm:block">
+          <p className="hidden text-[0.62rem] uppercase tracking-[0.18em] text-white/55 sm:block">
             {APP_TAGLINE}
           </p>
         </div>
