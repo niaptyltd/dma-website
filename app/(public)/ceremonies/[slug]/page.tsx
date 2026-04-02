@@ -163,7 +163,7 @@ export default async function CeremonyDetailPage({
                 Ceremony Highlights
               </p>
               <div className="grid gap-4">
-                {ceremony.highlights.map((item) => (
+                {ceremony.highlights.map((item: string) => (
                   <div className="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-4" key={item}>
                     <p className="text-sm leading-7 text-brand-muted">{item}</p>
                   </div>
