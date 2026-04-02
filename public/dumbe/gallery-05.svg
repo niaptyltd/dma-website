@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <rect width="1600" height="1200" fill="#080808"/>
+  <rect x="58" y="58" width="1484" height="1084" rx="40" fill="#0B0907" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="1120" cy="280" r="260" fill="#D4B06D" fill-opacity=".14"/>
+  <circle cx="340" cy="900" r="220" fill="#D4B06D" fill-opacity=".08"/>
+  <path d="M168 875c219-231 478-404 867-525 118 139 196 289 220 469-274 189-721 250-1087 56Z" fill="#F8F0E4" fill-opacity=".04"/>
+  <text x="126" y="182" fill="#D4B06D" font-family="Georgia, serif" font-size="28" letter-spacing="8">GALLERY PLACEHOLDER</text>
+  <text x="126" y="1032" fill="#F8F0E4" font-family="Georgia, serif" font-size="62" font-weight="700">Audience Energy and Pride</text>
+</svg>

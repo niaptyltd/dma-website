@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <rect width="1600" height="1200" fill="#080808"/>
+  <rect x="58" y="58" width="1484" height="1084" rx="40" fill="#0C0A08" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="420" cy="320" r="280" fill="#D4B06D" fill-opacity=".16"/>
+  <circle cx="1240" cy="820" r="250" fill="#D4B06D" fill-opacity=".08"/>
+  <path d="M210 900c170-260 355-387 713-522 111 177 116 332 14 543H210V900Z" fill="#F8F0E4" fill-opacity=".04"/>
+  <text x="130" y="180" fill="#D4B06D" font-family="Georgia, serif" font-size="28" letter-spacing="8">GALLERY PLACEHOLDER</text>
+  <text x="130" y="1030" fill="#F8F0E4" font-family="Georgia, serif" font-size="62" font-weight="700">Stage Lighting and Atmosphere</text>
+</svg>

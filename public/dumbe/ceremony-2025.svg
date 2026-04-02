@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="150" y1="120" x2="1480" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#100C08"/>
+      <stop offset=".58" stop-color="#090909"/>
+      <stop offset="1" stop-color="#24190F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1472" height="1072" rx="40" fill="#0B0907" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="375" cy="310" r="250" fill="#D4B06D" fill-opacity=".12"/>
+  <circle cx="1248" cy="902" r="320" fill="#D4B06D" fill-opacity=".07"/>
+  <rect x="910" y="190" width="430" height="560" rx="30" fill="#F8F0E4" fill-opacity=".05" stroke="rgba(255,255,255,.1)"/>
+  <rect x="972" y="260" width="306" height="380" rx="24" fill="#D4B06D" fill-opacity=".12"/>
+  <text x="140" y="190" fill="#D4B06D" font-family="Georgia, serif" font-size="30" letter-spacing="9">DUMBE MUSIC AWARDS</text>
+  <text x="140" y="330" fill="#F8F0E4" font-family="Georgia, serif" font-size="112" font-weight="700">2025 Archive</text>
+  <text x="140" y="430" fill="#F8F0E4" font-family="Arial, sans-serif" font-size="44">Sound of the Soil</text>
+  <text x="140" y="525" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Placeholder visual for a completed ceremony detail page.</text>
+  <text x="140" y="570" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Built for easy replacement with real ceremony photography.</text>
+  <text x="140" y="875" fill="#F8F0E4" font-family="Georgia, serif" font-size="58">Recognition with stronger public confidence</text>
+  <text x="140" y="930" fill="#B9AD99" font-family="Arial, sans-serif" font-size="24">Completed ceremony placeholder image</text>
+</svg>

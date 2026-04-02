@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <rect width="1200" height="1500" fill="#090909"/>
+  <rect x="54" y="54" width="1092" height="1392" rx="42" fill="#0C0A08" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="860" cy="320" r="240" fill="#D4B06D" fill-opacity=".16"/>
+  <rect x="210" y="260" width="780" height="980" rx="34" fill="#F8F0E4" fill-opacity=".04" stroke="rgba(255,255,255,.1)"/>
+  <path d="M304 1060c87-264 211-454 546-625 120 163 167 305 124 570-246 97-439 118-670 55Z" fill="#D4B06D" fill-opacity=".13"/>
+  <text x="118" y="1320" fill="#D4B06D" font-family="Georgia, serif" font-size="26" letter-spacing="8">GALLERY PLACEHOLDER</text>
+  <text x="118" y="1395" fill="#F8F0E4" font-family="Georgia, serif" font-size="58" font-weight="700">Award Handover Moment</text>
+</svg>

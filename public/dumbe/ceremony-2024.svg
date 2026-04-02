@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="220" y1="40" x2="1400" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#130E09"/>
+      <stop offset=".62" stop-color="#080808"/>
+      <stop offset="1" stop-color="#24180D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1496" height="1096" rx="42" fill="#0B0907" stroke="rgba(255,255,255,.12)"/>
+  <path d="M1112 226c153 0 278 124 278 278s-125 278-278 278c-118 0-219-73-258-178 33 17 71 26 111 26 129 0 233-104 233-233 0-79-39-148-100-190 5-1 9-1 14-1Z" fill="#D4B06D" fill-opacity=".12"/>
+  <rect x="150" y="210" width="470" height="650" rx="32" fill="#F8F0E4" fill-opacity=".04" stroke="rgba(255,255,255,.1)"/>
+  <path d="M270 738c74-151 152-294 356-408-25 112-26 239-5 377-98 109-217 140-351 31Z" fill="#D4B06D" fill-opacity=".18"/>
+  <text x="760" y="230" fill="#D4B06D" font-family="Georgia, serif" font-size="30" letter-spacing="9">DUMBE MUSIC AWARDS</text>
+  <text x="760" y="360" fill="#F8F0E4" font-family="Georgia, serif" font-size="112" font-weight="700">2024 Archive</text>
+  <text x="760" y="460" fill="#F8F0E4" font-family="Arial, sans-serif" font-size="44">Honouring Our Own</text>
+  <text x="760" y="554" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Foundational ceremony placeholder artwork</text>
+  <text x="760" y="599" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">ready for later replacement with real venue or audience imagery.</text>
+  <text x="760" y="900" fill="#F8F0E4" font-family="Georgia, serif" font-size="58">Early momentum with visible local pride</text>
+</svg>

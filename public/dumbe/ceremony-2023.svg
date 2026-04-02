@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="110" y1="90" x2="1490" y2="1110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#120D08"/>
+      <stop offset=".58" stop-color="#080808"/>
+      <stop offset="1" stop-color="#21160D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1480" height="1080" rx="40" fill="#0A0907" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="1220" cy="280" r="220" fill="#D4B06D" fill-opacity=".14"/>
+  <circle cx="320" cy="930" r="280" fill="#D4B06D" fill-opacity=".08"/>
+  <rect x="180" y="210" width="390" height="520" rx="30" fill="#F8F0E4" fill-opacity=".04" stroke="rgba(255,255,255,.1)"/>
+  <rect x="260" y="290" width="230" height="360" rx="22" fill="#D4B06D" fill-opacity=".15"/>
+  <text x="710" y="215" fill="#D4B06D" font-family="Georgia, serif" font-size="30" letter-spacing="9">DUMBE MUSIC AWARDS</text>
+  <text x="710" y="340" fill="#F8F0E4" font-family="Georgia, serif" font-size="112" font-weight="700">2023 Archive</text>
+  <text x="710" y="438" fill="#F8F0E4" font-family="Arial, sans-serif" font-size="44">The First Ovation</text>
+  <text x="710" y="534" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Placeholder visual for the inaugural awards chapter.</text>
+  <text x="710" y="579" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Designed to preserve the feeling of a platform just beginning.</text>
+  <text x="710" y="885" fill="#F8F0E4" font-family="Georgia, serif" font-size="56">Where recognition first became public memory</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1400" fill="none">
+  <rect width="1400" height="1400" fill="#090909"/>
+  <rect x="60" y="60" width="1280" height="1280" rx="40" fill="#0C0A08" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="720" cy="400" r="300" fill="#D4B06D" fill-opacity=".14"/>
+  <rect x="245" y="340" width="910" height="720" rx="36" fill="#F8F0E4" fill-opacity=".04" stroke="rgba(255,255,255,.1)"/>
+  <path d="M330 930c127-179 228-303 505-456 151 92 242 208 283 368-186 150-465 202-788 88Z" fill="#D4B06D" fill-opacity=".12"/>
+  <text x="130" y="1210" fill="#D4B06D" font-family="Georgia, serif" font-size="26" letter-spacing="8">GALLERY PLACEHOLDER</text>
+  <text x="130" y="1284" fill="#F8F0E4" font-family="Georgia, serif" font-size="58" font-weight="700">Guest Hospitality Frame</text>
+</svg>

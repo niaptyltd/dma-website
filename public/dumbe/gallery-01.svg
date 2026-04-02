@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <rect width="1200" height="1500" fill="#090909"/>
+  <rect x="56" y="56" width="1088" height="1388" rx="40" fill="#0D0B09" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="410" cy="350" r="260" fill="#D4B06D" fill-opacity=".15"/>
+  <rect x="235" y="320" width="730" height="860" rx="38" fill="#F8F0E4" fill-opacity=".04" stroke="rgba(255,255,255,.1)"/>
+  <rect x="332" y="420" width="536" height="620" rx="28" fill="#D4B06D" fill-opacity=".12"/>
+  <text x="118" y="1320" fill="#D4B06D" font-family="Georgia, serif" font-size="26" letter-spacing="8">GALLERY PLACEHOLDER</text>
+  <text x="118" y="1395" fill="#F8F0E4" font-family="Georgia, serif" font-size="58" font-weight="700">Arrival Portrait Moment</text>
+</svg>

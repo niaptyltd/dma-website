@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="50" x2="1040" y2="1450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#161008"/>
+      <stop offset=".62" stop-color="#090909"/>
+      <stop offset="1" stop-color="#291D11"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect x="54" y="54" width="1092" height="1392" rx="42" fill="#0B0907" stroke="rgba(255,255,255,.12)"/>
+  <circle cx="610" cy="450" r="250" fill="#D4B06D" fill-opacity=".15"/>
+  <path d="M622 470c110 0 199 89 199 199v174H423V669c0-110 89-199 199-199Z" fill="#F8F0E4" fill-opacity=".12"/>
+  <circle cx="622" cy="390" r="130" fill="#F8F0E4" fill-opacity=".12"/>
+  <path d="M496 305c34-68 104-115 187-115 88 0 161 53 192 129-20-11-43-17-67-17-81 0-146 65-146 146 0 33 11 64 30 88-21 10-45 16-70 16-92 0-166-74-166-166 0-31 9-58 40-81Z" fill="#D4B06D" fill-opacity=".16"/>
+  <text x="120" y="1090" fill="#D4B06D" font-family="Georgia, serif" font-size="28" letter-spacing="8">FOUNDER PORTRAIT PLACEHOLDER</text>
+  <text x="120" y="1188" fill="#F8F0E4" font-family="Georgia, serif" font-size="74" font-weight="700">Bhekithmba</text>
+  <text x="120" y="1260" fill="#F8F0E4" font-family="Georgia, serif" font-size="74" font-weight="700">Ngubane</text>
+  <text x="120" y="1345" fill="#B9AD99" font-family="Arial, sans-serif" font-size="28">Replace with a final portrait photo when available.</text>
+</svg>
