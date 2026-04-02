@@ -184,7 +184,7 @@ export default async function CeremonyDetailPage({
             />
           </Reveal>
           <div className="grid gap-6 lg:grid-cols-2">
-            {ceremony.programme.map((item: { time: string; title: string }, index: number) => (
+            {ceremony.programme.map((item: { time: string; title: string; description: string }, index: number) => (
               <Reveal delay={index * 0.08} key={`${item.time}-${item.title}`}>
                 <Card className="space-y-3">
                   <p className="text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-[#d4b06d]">
