@@ -28,7 +28,7 @@ export type FounderProfile = {
 
 export type AboutStoryBlock = {
   title: string;
-  description: string;
+  body: string[];
 };
 
 export type TimelineEntry = {
