@@ -148,7 +148,7 @@ export default async function CeremonyDetailPage({
                 description={ceremony.shortDescription}
               />
               <div className="space-y-4">
-                {ceremony.overview.map((paragraph) => (
+                {ceremony.overview.map((paragraph: string) => (
                   <p className="text-sm leading-7 text-brand-muted" key={paragraph}>
                     {paragraph}
                   </p>
