@@ -69,6 +69,7 @@ export type GalleryItem = {
   src: string;
   alt: string;
   caption: string;
+  orientation?: "portrait" | "landscape" | "square";
   year?: string;
   category?: string;
   ceremonySlug?: string;
