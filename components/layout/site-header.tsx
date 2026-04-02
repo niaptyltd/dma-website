@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 
 import { BrandMark } from "@/components/site/brand-mark";
 import { publicNavigation } from "@/constants/navigation";
-import { APP_NAME, APP_TAGLINE } from "@/constants/platform";
 import { cn } from "@/utils/cn";
 
 export function SiteHeader() {
@@ -33,16 +32,8 @@ export function SiteHeader() {
       )}
     >
       <div className="container-shell flex min-h-20 items-center justify-between gap-4 py-3">
-        <Link className="flex min-w-0 items-center gap-3" href="/">
-          <BrandMark compact />
-          <div className="min-w-0">
-            <p className="truncate text-base font-semibold tracking-[-0.03em] text-brand-ink">
-              {APP_NAME}
-            </p>
-            <p className="truncate text-xs uppercase tracking-[0.2em] text-brand-muted">
-              {APP_TAGLINE}
-            </p>
-          </div>
+        <Link className="shrink-0" href="/" aria-label="Dumbe Music Awards">
+          <BrandMark />
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
